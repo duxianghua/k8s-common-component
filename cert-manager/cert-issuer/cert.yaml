@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: ca-cert
+spec:
+  secretName: ca-crt-secret
+  dnsNames:
+  - "*"
+  issuerRef:
+    name: ingress-issuer
+    kind: ClusterIssuer
+    group: cert-manager.io
