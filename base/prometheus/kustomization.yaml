@@ -1,0 +1,7 @@
+namespace: monitoring-system
+resources:
+    - namespace.yaml
+    - prometheus-operator
+    - kube-state-metrics
+    - node-exporter
+    - tls-watcher

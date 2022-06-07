@@ -1,0 +1,11 @@
+# This yamls are based on https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack
+namespace: monitoring-system
+resources:
+  - crds
+  - clusterRole.yaml
+  - clusterRoleBinding.yaml
+  - service.yaml
+  - serviceAccount.yaml
+  - serviceMonitor.yaml
+  - deployment.yaml
+  - prometheusRule.yaml

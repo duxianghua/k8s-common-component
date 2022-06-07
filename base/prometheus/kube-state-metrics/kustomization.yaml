@@ -1,0 +1,6 @@
+resources:
+  - serviceAccount.yaml
+  - clusterRole.yaml
+  - clusterRoleBinding.yaml
+  - deployment.yaml
+  - service.yaml
