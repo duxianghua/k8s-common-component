@@ -1,0 +1,15 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: kubernetes-dashboard
+resources:
+- 01-namespace.yaml
+- 02-role.yaml
+- 03-rolebinding.yaml
+- 04-clusterrole.yaml
+- 05-clusterrolebinding.yaml
+- 06-configmap.yaml
+- 07-secrets.yaml
+- 08-serviceaccount.yaml
+- 09-deployment.yaml
+- 10-service.yaml
+- 11-dashboard-metrics.yaml
